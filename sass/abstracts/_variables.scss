@@ -1,0 +1,34 @@
+//Breakponts
+$desktop-breakpoint:720px;
+
+//Colours
+//Dark Theme
+$fylo-dark-main-background:hsl(218, 28%, 13%); //Dark Blue (main background)
+$fylo-dark-intro-background:hsl(217, 28%, 15%); //Dark Blue (intro and email sign up background)
+$fylo-dark-footer-background:hsl(216, 53%, 9%); //Dark Blue (footer background)
+$fylo-dark-testimonials-background:hsl(219, 30%, 18%); //Dark Blue (testimonials background)
+
+$fylo-dark-cyan-grad: hsl(176, 68%, 64%); //Cyan (inside call-to-action gradient)
+$fylo-dark-blue-grad: hsl(198, 60%, 50%); //Blue (inside call-to-action gradient)
+
+$fylo-dark-copy:hsl(0, 0%, 100%);
+
+//Light Theme
+
+
+
+//Fonts
+$heading-font:'Raleway',
+sans-serif;
+$body-font:'Open Sans',
+sans-serif;
+//Mobile font sizes
+$p-size-m:4vw;
+$h1-size-m:6.4vw;
+$h2-size-m:5.6vw;
+$h3-size-m:5.066vw;
+//Desktop font sizes
+$p-size-dt:1.458vw;
+$h1-size-dt:2.777vw;
+$h2-size-dt:2.0138vw;
+$h3-size-dt:2.22vw;

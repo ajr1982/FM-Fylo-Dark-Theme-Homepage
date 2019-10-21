@@ -1,0 +1,96 @@
+header {
+    background-color: $fylo-dark-intro-background;
+    background-image: url(../images/bg-curvy-mobile.svg), linear-gradient(to bottom, $fylo-dark-intro-background 68%, $fylo-dark-main-background 68%);
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    padding-bottom: 1px;
+
+    @include for-desktop {
+        background-image: url(../images/bg-curvy-desktop.svg), linear-gradient(to bottom, $fylo-dark-intro-background 73%, $fylo-dark-main-background 73%);
+        background-position: 0 60%;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 19.2vw;
+        padding: 0 10.666vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include for-desktop {
+            height: 12.916vw;
+            padding: 0 5.555vw;
+
+        }
+
+        a {
+            margin: 0;
+        }
+
+        svg {
+            width: 21.866vw;
+            height: 6.933vw;
+
+            @include for-desktop {
+                width: 12.847vw;
+                height: 4.027vw;
+            }
+        }
+
+        ul {
+            width: 49.066vw;
+            display: flex;
+            justify-content: space-between;
+
+            @include for-desktop {
+                width: 20.833vw;
+            }
+
+            li {
+                font-size: 2.733vw;
+
+                @include for-desktop {
+                    font-size: 1.111vw;
+                }
+
+                a {
+                    color: $fylo-dark-copy;
+                }
+
+            }
+        }
+
+    }
+
+    img,
+    h1,
+    p {
+        width: 81.333vw;
+        margin: 9vw auto 0 auto;
+
+        @include for-desktop {
+            width: 50.138vw;
+            margin: 3vw auto 0 auto;
+        }
+    }
+
+    p {
+        @include for-desktop {
+            width: 40.763vw;
+        }
+    }
+
+    a {
+        margin: 9vw auto;
+
+        @include for-desktop {
+
+            margin: 3vw auto;
+        }
+    }
+}

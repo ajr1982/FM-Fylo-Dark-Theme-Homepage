@@ -1,0 +1,44 @@
+body,
+main {
+    background-color: $fylo-dark-main-background;
+    width: 100%;
+}
+
+.floating {
+    width: 93.6vw;
+    margin-left: 50vw;
+    position: absolute;
+    left: -46.8vw;
+    text-align: center;
+    padding: 4vw;
+    z-index: 999;
+    @include rounded-raised-div;
+
+    @include for-desktop {
+        width: 65.55vw;
+        left: -32.775vw
+    }
+
+    input[type=submit],
+    input[type=text] {
+        border-radius: 200px;
+        width: 75.2vw;
+        height: 13.333vw;
+        display: block;
+        margin: 0 auto 4vw auto;
+        border: 0;
+
+        @include for-desktop {
+            width: 14.097vw;
+            height: 3.472vw;
+            display: inline-block;
+            margin: 2vw auto 0 auto;
+        }
+    }
+
+    input[type=text] {
+        @include for-desktop {
+            width: 33.611vw;
+        }
+    }
+}

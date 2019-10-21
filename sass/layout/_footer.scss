@@ -1,0 +1,176 @@
+footer {
+    width: 100vw;
+    height: 250vw;
+    background-color: $fylo-dark-footer-background;
+    color: #ffffff;
+    font-family: $body-font;
+    padding: 62vw 5.333vw 12.8vw 5.333vw;
+    margin: 32vw auto 0 auto;
+
+    @include for-desktop {
+        height: 38.88vw;
+        padding: 13.194vw 8.333vw 8.611vw 8.333vw;
+        margin: 15vw auto 0 auto;
+    }
+
+    svg {
+        width: 21.866vw;
+        height: 6.933vw;
+
+        @include for-desktop {
+            width: 12.847vw;
+            height: 4.027vw;
+        }
+    }
+
+    .five-col-block {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        @include for-desktop {
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: center;
+        }
+    }
+
+    .five-col {
+
+        //@include element-boundary;
+        @include for-desktop {
+            flex-basis: 365px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: 4.26vw;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        @include for-desktop {
+            padding-left: 25%;
+            font-size: 1.111vw;
+        }
+
+
+    }
+
+    li {
+        margin-bottom: 5vw;
+
+        @include for-desktop {
+            margin-bottom: 1.5vw;
+        }
+    }
+
+    p {
+        padding-left: 10.666vw;
+        text-align: left;
+        color: #ffffff;
+        font-size: 4.26vw;
+        background-position: top left;
+        background-repeat: no-repeat;
+
+        @include for-desktop {
+            padding-left: 2.91vw;
+            font-size: 1.111vw;
+        }
+    }
+
+    p.address {
+        background-image: url(../images/icon-location.svg);
+        background-size: 5vw;
+
+        @include for-desktop {
+            background-size: 0.972vw;
+        }
+    }
+
+    p.tel {
+        background-image: url(../images/icon-phone.svg);
+        background-size: 6.1vw;
+
+        @include for-desktop {
+            background-size: 1.527vw;
+        }
+    }
+
+    p.email {
+        background-image: url(../images/icon-email.svg);
+        background-size: 7.466vw;
+
+        @include for-desktop {
+            background-size: 1.597vw;
+        }
+    }
+
+    .nav-2 {
+        ul {
+            margin-top: 0;
+
+            @include for-desktop {
+                margin-top: 1.11097222vw;
+            }
+
+        }
+
+    }
+
+    .contact {
+        @include for-desktop {
+            margin-left: 3vw;
+        }
+    }
+
+    .contact,
+    .nav-2 {
+        padding-bottom: 7vw;
+
+        @include for-desktop {
+            padding-bottom: 0;
+
+        }
+    }
+
+    .nav-2 ul {
+        @include for-desktop {
+            padding-left: 0;
+        }
+
+    }
+
+    ion-icon {
+        font-size: 8.53vw;
+
+        @include for-desktop {
+            font-size: 2.222vw;
+        }
+
+    }
+
+    .social {
+        align-self: center;
+        text-align: center;
+
+        @include for-desktop {
+            align-self: flex-start;
+            text-align: left;
+            // padding-top: 3.7vw;
+
+        }
+
+    }
+
+}
+
+footer_logo path {
+    fill: #ffffff;
+}

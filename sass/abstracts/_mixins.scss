@@ -1,0 +1,15 @@
+@mixin element-boundary {
+    border: 1px solid red;
+}
+
+@mixin for-desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin rounded-raised-div {
+    background-color: $fylo-dark-intro-background;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, .1);
+}

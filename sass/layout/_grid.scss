@@ -1,0 +1,248 @@
+section.features {
+    width: 100%;
+    display: grid;
+    padding: 6.94vw;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a""b""c""d""e""f";
+    grid-row-gap: 10vw;
+
+    @include for-desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b""c d""e f""e f";
+        grid-column-gap: 4vw;
+        grid-row-gap: 4vw;
+    }
+
+
+    .feature-left {
+        @include for-desktop {
+            margin-left: 10vw;
+        }
+
+    }
+
+    .feature-right {
+        @include for-desktop {
+            margin-right: 10vw;
+        }
+
+    }
+
+
+    img {
+        width: 24vw;
+        margin: 0 auto;
+
+        @include for-desktop {
+            width: 6.96vw;
+        }
+    }
+
+
+    .feature-area-a {
+        grid-area: a;
+
+    }
+
+    .feature-area-b {
+        grid-area: b;
+    }
+
+    .feature-area-c {
+        grid-area: c;
+    }
+
+    .feature-area-d {
+        grid-area: d;
+    }
+
+    .feature-area-e {
+        grid-area: e;
+    }
+
+    .feature-area-f {
+        grid-area: f;
+    }
+
+    .feature-double {
+        align-self: center;
+        margin: 0;
+        text-align: left;
+
+        h3,
+        p,
+        a {
+            text-align: left;
+        }
+
+        a {
+            text-decoration: underline;
+            font-size: $p-size-m;
+            padding-right: 6vw;
+            color: $fylo-dark-cyan-grad;
+            background-image: url(../images/icon-arrow.svg);
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @include for-desktop {
+                font-size: $p-size-dt;
+                padding-right: 3vw;
+            }
+        }
+
+        h3 {
+            @include for-desktop {
+                font-size: 2.777vw;
+                width: 25vw;
+            }
+        }
+
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+}
+
+section.testimonials {
+    position: relative;
+    width: 100%;
+    display: grid;
+    padding: 6.94vw;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "aa""bb""cc";
+    row-gap: 10vw;
+
+
+    @include for-desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "aa bb cc";
+        column-gap: 4vw;
+        row-gap: 4vw;
+
+    }
+
+    .quote-mark {
+        position: absolute;
+        left: 10vw;
+        top: .5vw;
+        width: 10vw;
+
+        @include for-desktop {
+            left: 5vw;
+            top: 5vw;
+            width: 5vw;
+        }
+    }
+}
+
+.testimonial {
+    @include rounded-raised-div;
+    background-color: $fylo-dark-testimonials-background;
+    padding: 8vw;
+    flex: 1;
+    box-shadow: 5px 5px 5px 3px $fylo-dark-intro-background;
+    ;
+
+    @include for-desktop {
+        padding: 2vw;
+    }
+
+    img {
+        width: 6.4vw;
+        clip-path: circle(3.2vw at 3.2vw 3.2vw);
+
+        @include for-desktop {
+            width: 1.94vw;
+            clip-path: circle(.97vw at .97vw .97vw);
+        }
+    }
+
+    p {
+        text-align: left;
+    }
+
+}
+
+.feature-area-aa {
+    grid-area: aa;
+
+}
+
+.feature-area-bb {
+    grid-area: bb;
+}
+
+.feature-area-cc {
+    grid-area: cc;
+}
+
+.profile {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    grid-template-columns: 6.4vw 44vw;
+    grid-template-areas: "e-pic e-name""e-pic e-role";
+    grid-row-gap: .5vw;
+    column-gap: 3vw;
+    color: $fylo-dark-copy;
+
+    @include for-desktop {
+        grid-template-columns: 1.94vw 9vw;
+        font-size: .7vw;
+        column-gap: .7vw;
+    }
+
+
+
+    .endorser {
+        grid-area: e-name;
+        font-family: $heading-font;
+
+        font-weight: 700;
+    }
+
+    .job-title {
+        grid-area: e-role;
+        font-family: $body-font;
+    }
+
+    .profile-image {
+        grid-area: e-pic;
+    }
+}
+
+.flex-test {
+    width: 100%;
+    display: flex;
+    padding: 6.94vw;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+}
+
+.flexy {
+    flex: 1;
+}
+
+.f1 {
+    background-color: red;
+}
+
+.f2 {
+    background-color: blue;
+}
+
+.f3 {
+    background-color: green;
+}
