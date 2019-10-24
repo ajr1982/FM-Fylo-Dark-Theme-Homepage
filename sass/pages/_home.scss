@@ -28,17 +28,33 @@ main {
         margin: 0 auto 4vw auto;
         border: 0;
 
+
         @include for-desktop {
             width: 14.097vw;
             height: 3.472vw;
             display: inline-block;
             margin: 2vw auto 0 auto;
+
         }
     }
 
     input[type=text] {
+        font-family: $body-font;
+        font-size: 3vw;
+        padding-left: 6vw;
+        color: #999999;
+        border: none;
+
         @include for-desktop {
             width: 33.611vw;
+            padding-left: 3vw;
+            font-size: 1.2vw;
+        }
+
+        &:focus {
+            border: none;
+            outline: none;
         }
     }
+
 }

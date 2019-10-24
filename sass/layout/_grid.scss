@@ -6,12 +6,12 @@ section.features {
     align-items: baseline;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-areas: "a""b""c""d""e""f";
+    grid-template-areas: "access""security""collab""any-file""prod-img""prod-copy";
     grid-row-gap: 10vw;
 
     @include for-desktop {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "a b""c d""e f""e f";
+        grid-template-areas: "access security""collab any-file""prod-img prod-copy""prod-img prod-copy";
         grid-column-gap: 4vw;
         grid-row-gap: 4vw;
     }
@@ -43,28 +43,28 @@ section.features {
 
 
     .feature-area-a {
-        grid-area: a;
+        grid-area: access;
 
     }
 
     .feature-area-b {
-        grid-area: b;
+        grid-area: security;
     }
 
     .feature-area-c {
-        grid-area: c;
+        grid-area: collab;
     }
 
     .feature-area-d {
-        grid-area: d;
+        grid-area: any-file;
     }
 
     .feature-area-e {
-        grid-area: e;
+        grid-area: prod-img;
     }
 
     .feature-area-f {
-        grid-area: f;
+        grid-area: prod-copy;
     }
 
     .feature-double {
@@ -119,13 +119,13 @@ section.testimonials {
     align-items: baseline;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-areas: "aa""bb""cc";
+    grid-template-areas: "quote-1""quote-2""quote-3";
     row-gap: 10vw;
 
 
     @include for-desktop {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "aa bb cc";
+        grid-template-areas: "quote-1 quote-2 quote-3";
         column-gap: 4vw;
         row-gap: 4vw;
 
@@ -174,16 +174,16 @@ section.testimonials {
 }
 
 .feature-area-aa {
-    grid-area: aa;
+    grid-area: quote-1;
 
 }
 
 .feature-area-bb {
-    grid-area: bb;
+    grid-area: quote-2;
 }
 
 .feature-area-cc {
-    grid-area: cc;
+    grid-area: quote-3;
 }
 
 .profile {
