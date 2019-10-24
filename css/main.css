@@ -401,8 +401,8 @@ section.testimonials .quote-mark {
   top: 0;
   left: 0;
   background-color: #1c2431;
-  background-image: url(../images/bg-curvy-mobile.svg), -webkit-gradient(linear, left top, left bottom, color-stop(68%, #1c2431), color-stop(68%, #181f2a));
-  background-image: url(../images/bg-curvy-mobile.svg), linear-gradient(to bottom, #1c2431 68%, #181f2a 68%);
+  background-image: url(../images/bg-curvy-mobile.svg), -webkit-gradient(linear, left top, left bottom, color-stop(68%, #1c2431), color-stop(68%, #181f2b));
+  background-image: url(../images/bg-curvy-mobile.svg), linear-gradient(to bottom, #1c2431 68%, #181f2b 68%);
   background-position: 0 60%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -414,8 +414,8 @@ section.testimonials .quote-mark {
 
 @media (min-width: 720px) {
   .header-bg {
-    background-image: url(../images/bg-curvy-desktop.svg), -webkit-gradient(linear, left top, left bottom, color-stop(73%, #1c2431), color-stop(73%, #181f2a));
-    background-image: url(../images/bg-curvy-desktop.svg), linear-gradient(to bottom, #1c2431 73%, #181f2a 73%);
+    background-image: url(../images/bg-curvy-desktop.svg), -webkit-gradient(linear, left top, left bottom, color-stop(73%, #1c2431), color-stop(73%, #181f2b));
+    background-image: url(../images/bg-curvy-desktop.svg), linear-gradient(to bottom, #1c2431 73%, #181f2b 73%);
     background-position: 0 60%;
     height: 80.845vw;
   }
@@ -432,7 +432,7 @@ header .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #181f2a;
+  background-color: #181f2b;
   opacity: 0;
 }
 
@@ -926,7 +926,7 @@ footer_logo path {
 
 body,
 main {
-  background-color: #181f2a;
+  background-color: #181f2b;
   width: 100%;
 }
 

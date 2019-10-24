@@ -101,25 +101,25 @@ themeSwitcher
         ease: Power1.easeOut
     }, .3)
     .fromTo("main", .8, {
-        backgroundColor: '#181f2a'
+        backgroundColor: '#181f2b'
     }, {
         backgroundColor: '#ffffff',
         ease: Power1.easeOut
     }, .3)
     .fromTo(".overlay", .8, {
-        backgroundColor: '#181f2a'
+        backgroundColor: '#181f2b'
     }, {
         backgroundColor: '#ffffff',
         ease: Power1.easeOut
     }, .3)
     .fromTo("body", .8, {
-        backgroundColor: '#181f2a'
+        backgroundColor: '#181f2b'
     }, {
         backgroundColor: '#ffffff',
         ease: Power1.easeOut
     }, .3)
     .fromTo("section.features", .8, {
-        backgroundColor: '#202a3c'
+        backgroundColor: '#181f2b'
     }, {
         backgroundColor: '#f7f7f7',
         ease: Power1.easeOut
