@@ -36,7 +36,7 @@ footer {
         }
     }
 
-    .five-col {
+    .five-col-block__column {
 
         //@include element-boundary;
         @include for-desktop {
@@ -112,7 +112,7 @@ footer {
         }
     }
 
-    .nav-2 {
+    .five-col-block__column--fourth {
         ul {
             margin-top: 0;
 
@@ -124,14 +124,15 @@ footer {
 
     }
 
-    .contact {
+    .five-col-block__column--second {
         @include for-desktop {
             margin-left: 3vw;
+
         }
     }
 
-    .contact,
-    .nav-2 {
+    .five-col-block__column--second,
+    .five-col-block__column--fourth {
         padding-bottom: 7vw;
 
         @include for-desktop {
@@ -140,7 +141,7 @@ footer {
         }
     }
 
-    .nav-2 ul {
+    .five-col-block__column--fourth ul {
         @include for-desktop {
             padding-left: 0;
         }
@@ -156,7 +157,7 @@ footer {
 
     }
 
-    .social {
+    .five-col-block__column--fifth {
         align-self: center;
         text-align: center;
 

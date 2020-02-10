@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     background-color: $fylo-dark-intro-background;
+
     background-image: url(../images/bg-curvy-mobile.svg), linear-gradient(to bottom, $fylo-dark-intro-background 68%, $fylo-dark-main-background 68%);
     background-position: 0 60%;
     background-repeat: no-repeat;
@@ -32,6 +33,10 @@ header {
         left: 0;
         background-color: $fylo-dark-main-background;
         opacity: 0;
+
+        @include for-desktop {
+            display: none;
+        }
     }
 
     nav {
@@ -193,6 +198,13 @@ header {
 
                 a {
                     color: $fylo-dark-copy;
+
+                }
+
+                a:hover {
+                    @include for-desktop {
+                        text-decoration: underline;
+                    }
                 }
 
             }

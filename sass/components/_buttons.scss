@@ -1,4 +1,4 @@
-.btn-cyan-blue {
+.btn {
     font-family: $body-font;
     background-color: $fylo-dark-cyan-grad;
     background-image: linear-gradient(to right, $fylo-dark-cyan-grad 0%, $fylo-dark-blue-grad 100%);
@@ -11,6 +11,7 @@
     text-align: center;
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, .1);
     display: block;
+    cursor: pointer;
 
 
 
@@ -21,44 +22,8 @@
     }
 }
 
-.btn-pink:hover,
-.btn-white:hover {
+
+.btn:hover {
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .3);
 
-}
-
-.cta {
-    text-decoration: none;
-}
-
-.cta-pink {
-    font-size: 3vw;
-    padding: 3vw 0;
-    width: 53.33vw;
-
-    @include for-desktop {
-        font-size: 1.5vw;
-        width: 27.77vw;
-        padding: 1.3vw 0;
-
-    }
-}
-
-.btn-white {
-    width: 26.66vw;
-    border-radius: 100px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 3vw;
-    font-family: $body-font;
-    font-weight: 700;
-    padding: 2vw 0;
-    text-align: center;
-    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, .1);
-
-    @include for-desktop {
-        width: 13.888vw;
-        font-size: 1.3vw;
-        padding: 1vw 0;
-    }
 }
